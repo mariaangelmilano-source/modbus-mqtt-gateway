@@ -2,7 +2,7 @@
 
 A lightweight gateway that polls industrial devices over **Modbus RTU** (RS-485) and republishes each register as a JSON **MQTT** tag, so sensor data from legacy field equipment can reach IoT platforms, dashboards and data pipelines.
 
-> This project is based on my undergraduate thesis (*Trabajo Especial de Grado*, B.Sc. Electrical Engineering — Electronics, Computing & Control, Universidad Central de Venezuela, 2022). The thesis delivered the full gateway on embedded hardware with a custom PCB. This repository is a software re-implementation of the gateway logic in Python, fully tested and with a device simulator so anyone can run it without hardware. The original firmware from the thesis annexes will be added under `firmware/`.
+> This project is based on my undergraduate thesis (*Trabajo Especial de Grado*, B.Sc. Electrical Engineering — Electronics, Computing & Control, Universidad Central de Venezuela, 2022). In the thesis I designed and built the gateway as a hardware product: ESP32 firmware in C on FreeRTOS, a custom KiCad PCB, and field validation with a real RTU beyond 1200 m, plus a Node-RED dashboard and a Telegram bot. The original firmware state machines are in [`firmware/`](firmware/). This repository adds a Python re-implementation of the gateway logic with tests and a device simulator, so anyone can run it without hardware.
 
 ## Why it matters
 
