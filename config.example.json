@@ -1,0 +1,30 @@
+{
+  "topic_prefix": "plant/line1",
+  "baudrate": 9600,
+  "devices": [
+    {
+      "name": "boiler",
+      "slave_id": 1,
+      "function": 3,
+      "start": 0,
+      "count": 4,
+      "tags": [
+        {"name": "temperature", "register": 0, "scale": 0.1, "unit": "degC"},
+        {"name": "pressure", "register": 1, "scale": 0.01, "unit": "kPa"},
+        {"name": "flow", "register": 2, "scale": 1, "unit": "l/min"},
+        {"name": "pump_on", "register": 3, "scale": 1, "unit": ""}
+      ]
+    },
+    {
+      "name": "tank",
+      "slave_id": 2,
+      "function": 4,
+      "start": 0,
+      "count": 2,
+      "tags": [
+        {"name": "temperature", "register": 0, "scale": 0.1, "unit": "degC"},
+        {"name": "level_raw", "register": 1, "scale": 1, "unit": ""}
+      ]
+    }
+  ]
+}
