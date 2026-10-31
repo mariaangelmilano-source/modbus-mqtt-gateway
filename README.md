@@ -2,7 +2,7 @@
 
 A lightweight gateway that polls industrial devices over **Modbus RTU** (RS-485) and republishes each register as a JSON **MQTT** tag, so sensor data from legacy field equipment can reach IoT platforms, dashboards and data pipelines.
 
-> This project is based on my undergraduate thesis (*Trabajo Especial de Grado*, B.Sc. Electrical Engineering — Electronics, Computing & Control, Universidad Central de Venezuela, 2022). This repository is a clean, fully tested re-implementation for my portfolio. It includes a device simulator, so it runs without hardware.
+> This project is based on my undergraduate thesis (*Trabajo Especial de Grado*, B.Sc. Electrical Engineering — Electronics, Computing & Control, Universidad Central de Venezuela, 2022). The thesis delivered the full gateway on embedded hardware with a custom PCB. This repository is a software re-implementation of the gateway logic in Python, fully tested and with a device simulator so anyone can run it without hardware. The original firmware from the thesis annexes will be added under `firmware/`.
 
 ## Why it matters
 
@@ -29,7 +29,7 @@ Plants are full of meters, PLCs and sensors that only speak Modbus RTU over a se
 ## Quick start
 
 ```bash
-git clone https://github.com/maria-angel-milano/modbus-mqtt-gateway.git
+git clone https://github.com/mariaangelmilano-source/modbus-mqtt-gateway.git
 cd modbus-mqtt-gateway
 python -m gateway --config config.example.json --cycles 5
 ```
